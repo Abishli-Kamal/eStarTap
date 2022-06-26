@@ -1,0 +1,224 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-image: url();
+}
+header {
+  nav {
+    background-color: white;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    display: block;
+    .logo {
+      h2 {
+        color: #555a68;
+      }
+    }
+    .navbar {
+      ul {
+        li {
+          list-style: none;
+          cursor: pointer;
+          &:hover {
+            color: #95c987;
+            transition: 0.5s;
+          }
+        }
+      }
+    }
+  }
+}
+main {
+  #home {
+    margin-top: 5%;
+    .title {
+      h1 {
+        color: #71c55d;
+      }
+      p {
+        color: #9a9a9a;
+      }
+    }
+    .links {
+      margin-top: 3%;
+      ul {
+        display: flex;
+        justify-content: center;
+        li {
+          list-style: none;
+          margin-left: 15px;
+          cursor: pointer;
+          font-size: 12px;
+          &:hover {
+            color: #71c55d;
+          }
+        }
+      }
+    }
+  }
+  #posts {
+    margin-top: 4%;
+    .title {
+      text-align: center;
+      h2 {
+        font-weight: 100;
+        font-size: 45px;
+      }
+      p {
+        color: #a6a6a6;
+      }
+    }
+    .cardone {
+      p {
+        color: #818181;
+      }
+
+      a {
+        text-decoration: none;
+        color: #3f3e3e;
+        &:hover {
+          color: #95c987;
+        }
+      }
+    }
+  }
+  #email {
+    background-image: url(https://bootstrapmade.com/demo/templates/eStartup/assets/img/newsletter-bg.jpg);
+    background-position: center;
+    position: relative;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 40vh;
+    .emails{
+        justify-content: center;
+        width: 100%;
+        top:10%;
+        align-items: center;
+        position: absolute;
+    }
+    .email {
+
+      button {
+        background-color: #71c55d;
+      }
+    }
+    .icons {
+      ul {
+        display: flex;
+        justify-content: center;
+        margin-top: 3%;
+        div {
+          background-color: #71c55d;
+          width: 40px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 5vh;
+        }
+        li {
+          list-style: none;
+          i {
+            color: rgb(248, 240, 240);
+            &:hover {
+              color: white;
+            }
+          }
+        }
+      }
+    }
+  }
+  #contact {
+    margin-top: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .contactEnd {
+      i {
+        font-size: 25px;
+        color: #a0d892;
+        margin-top: 5%;
+      }
+      span {
+        margin-left: 5%;
+        font-size: 15px;
+      }
+    }
+    .title {
+      text-align: center;
+      h2 {
+        font-size: 45px;
+        font-weight: 100;
+      }
+    }
+    .icons {
+      margin-top: 3%;
+      div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #71c55d;
+        width: 23%;
+        height: 5vh;
+        cursor: pointer;
+        &:hover {
+          background-color: #196e04;
+        }
+        i {
+          color: white;
+        }
+      }
+    }
+    form {
+      button {
+        background-color: #71c55d;
+        color: white;
+        width: 25%;
+      }
+    }
+  }
+}
+footer{
+    #footerTop{
+        
+        background-color: #2a2c30;
+        color: white;
+        .start{
+            margin-top: 3%;
+            h2{
+                font-weight: 100;
+            }
+            p{
+                font-size: 12px;
+            }
+        }
+        .title{
+            margin-top: 8%;
+            
+        }
+        .navbar{
+            
+            ul{
+                padding: 0;
+                li{
+                    
+                    list-style: none;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 992px) {
+    header{
+        nav {
+            .navbar{
+                display: none;
+            }
+          }
+    }
+    
+  }

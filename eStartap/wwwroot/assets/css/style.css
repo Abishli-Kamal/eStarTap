@@ -1,0 +1,264 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url();
+}
+
+header nav {
+  background-color: white;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  display: block;
+}
+
+header nav .logo h2 {
+  color: #555a68;
+}
+
+header nav .navbar ul li {
+  list-style: none;
+  cursor: pointer;
+}
+
+header nav .navbar ul li:hover {
+  color: #95c987;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+main #home {
+  margin-top: 5%;
+}
+
+main #home .title h1 {
+  color: #71c55d;
+}
+
+main #home .title p {
+  color: #9a9a9a;
+}
+
+main #home .links {
+  margin-top: 3%;
+}
+
+main #home .links ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main #home .links ul li {
+  list-style: none;
+  margin-left: 15px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+main #home .links ul li:hover {
+  color: #71c55d;
+}
+
+main #posts {
+  margin-top: 4%;
+}
+
+main #posts .title {
+  text-align: center;
+}
+
+main #posts .title h2 {
+  font-weight: 100;
+  font-size: 45px;
+}
+
+main #posts .title p {
+  color: #a6a6a6;
+}
+
+main #posts .cardone p {
+  color: #818181;
+}
+
+main #posts .cardone a {
+  text-decoration: none;
+  color: #3f3e3e;
+}
+
+main #posts .cardone a:hover {
+  color: #95c987;
+}
+
+main #email {
+  background-image: url(https://bootstrapmade.com/demo/templates/eStartup/assets/img/newsletter-bg.jpg);
+  background-position: center;
+  position: relative;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 40vh;
+}
+
+main #email .emails {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  top: 10%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+}
+
+main #email .email button {
+  background-color: #71c55d;
+}
+
+main #email .icons ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 3%;
+}
+
+main #email .icons ul div {
+  background-color: #71c55d;
+  width: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 5vh;
+}
+
+main #email .icons ul li {
+  list-style: none;
+}
+
+main #email .icons ul li i {
+  color: #f8f0f0;
+}
+
+main #email .icons ul li i:hover {
+  color: white;
+}
+
+main #contact {
+  margin-top: 3%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main #contact .contactEnd i {
+  font-size: 25px;
+  color: #a0d892;
+  margin-top: 5%;
+}
+
+main #contact .contactEnd span {
+  margin-left: 5%;
+  font-size: 15px;
+}
+
+main #contact .title {
+  text-align: center;
+}
+
+main #contact .title h2 {
+  font-size: 45px;
+  font-weight: 100;
+}
+
+main #contact .icons {
+  margin-top: 3%;
+}
+
+main #contact .icons div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #71c55d;
+  width: 23%;
+  height: 5vh;
+  cursor: pointer;
+}
+
+main #contact .icons div:hover {
+  background-color: #196e04;
+}
+
+main #contact .icons div i {
+  color: white;
+}
+
+main #contact form button {
+  background-color: #71c55d;
+  color: white;
+  width: 25%;
+}
+
+footer #footerTop {
+  background-color: #2a2c30;
+  color: white;
+}
+
+footer #footerTop .start {
+  margin-top: 3%;
+}
+
+footer #footerTop .start h2 {
+  font-weight: 100;
+}
+
+footer #footerTop .start p {
+  font-size: 12px;
+}
+
+footer #footerTop .title {
+  margin-top: 8%;
+}
+
+footer #footerTop .navbar ul {
+  padding: 0;
+}
+
+footer #footerTop .navbar ul li {
+  list-style: none;
+}
+
+@media (max-width: 992px) {
+  header nav .navbar {
+    display: none;
+  }
+}
+/*# sourceMappingURL=style.css.map */

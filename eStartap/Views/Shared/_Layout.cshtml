@@ -1,0 +1,122 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/assets/css/style.css">
+    <link rel="stylesheet" href="~/assets/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+          integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>eStartap</title>
+</head>
+
+<body>
+    <header>
+        <div class="row w-100">
+            <nav class="d-flex justify-content-between w-100">
+                <div class="logo col-lg-3 mx-5 ">
+                    <h2 class="mx-3">@servis.GetDatas().Result.FirstOrDefault(s=>s.Key=="logo").Value</h2>
+                </div>
+                <div class="navbar col-lg-6">
+                    <ul class=" d-flex justify-content-around w-100">
+                        <li>Home</li>
+                        <li>About</li>
+                        <li>Features</li>
+                        <li>Screnshots</li>
+                        <li>Team</li>
+                        <li>Pricing</li>
+                        <li>Drop Down</li>
+                        <li>Contact</li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    @RenderBody()
+    <footer>
+        <section id="footerTop">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 start">
+                        <h2>eStartup</h2>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the industry's standard dummy text ever since the.
+                        </p>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="title">
+                            <h6>ABOUT US</h6>
+                        </div>
+                        <div class="navbar">
+                            <ul>
+                                <li>About Us</li>
+                                <li>Features Item</li>
+                                <li>Live Streaming</li>
+                                <li>Privacy Policy</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="title">
+                            <h6>ABOUT US</h6>
+                        </div>
+                        <div class="navbar">
+                            <ul>
+                                <li>About Us</li>
+                                <li>Features Item</li>
+                                <li>Live Streaming</li>
+                                <li>Privacy Policy</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="title">
+                            <h6>SUPPORT</h6>
+                        </div>
+                        <div class="navbar">
+                            <ul>
+                                <li>Faqs</li>
+                                <li>Editor Help</li>
+                                <li>Contact Us</li>
+                                <li>Privacy Policy</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="title">
+                            <h6>ABOUT US</h6>
+                        </div>
+                        <div class="navbar">
+                            <ul>
+                                <li>About Us</li>
+                                <li>Features Item</li>
+                                <li>Live Streaming</li>
+                                <li>Privacy Policy</li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <div id="footerend" class="text-center">
+            <span>
+                © Copyrights eStartup. All rights reserved.<br />
+                Designed by BootstrapMade
+            </span>
+        </div>
+    </footer>
+
+
+    <script src="~/assets/js/script.js"></script>
+</body>
+
+</html>

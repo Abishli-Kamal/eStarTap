@@ -1,0 +1,135 @@
+﻿@using eStartap.Models
+@using eStartap.View_Models
+@model HomeVM
+@{
+    ViewData["Title"] = "Index";
+}
+
+ <main>
+        <section id="home">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="title">
+                        <h1>@Model.HomePages.Title</h1>
+                        <p>@Model.HomePages.SubTitle</p>
+                    </div>
+                    <div class="img">
+                        <img width="60%" src="~/assets/img/@Model.HomePages.Image" alt="">
+                    </div>
+                    <div class="button mt-3">
+                        <button class="btn btn-outline-success rounded-pill">Get Started</button>
+                    </div>
+                    <div class="links">
+                        <ul>
+                            <li>APP STORE</li>
+                            <li>GOOGLE PLAY</li>
+                            <li>WINDOWS</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section id="posts">
+            <div class="container">
+                <div class="row">
+                    <div class="title">
+                        <h2>Latest Posts</h2>
+                        <p>Integer Cursus Bibendum Augue Ac Cursus .</p>
+                    </div>
+                    @foreach (Card card in Model.Cards)
+                   {
+                    
+                    <div class="cardone col-lg-4">
+                        <img width="100%" src="~/assets/img/@card.Image" alt="">
+                        <p> @card.Title</p>
+                        <div class="date d-flex justify-content-between">
+                            <p>@card.Date</p>
+                            <a href="">Read More</a>
+                        </div>
+                    </div>   
+                   }
+                </div>
+            </div>
+        </section>
+        <section id="email">
+            <div class="emails">
+                <div class="email d-flex justify-content-center">
+                    <input type="text" class="w-25 form-control" placeholder="Email Address">
+                    <button class="btn btn-success w-25">SUBSCRIBE</button>
+                </div>
+                <div class="icons">
+                    <ul>
+                        <div class="mx-4 rounded-circle">
+                            <li><a href=""><i class="@servis.GetDatas().Result.FirstOrDefault(s=>s.Key=="twitter").Value"></i></a></li>
+                        </div>
+                        <div class="mx-4 rounded-circle">
+                            <li><a href=""><i class="@servis.GetDatas().Result.FirstOrDefault(s=>s.Key=="facebook").Value"></i></a></li>
+                        </div>
+                        <div class="mx-4 rounded-circle">
+                            <li><a href=""><i class="@servis.GetDatas().Result.FirstOrDefault(s=>s.Key=="instagram").Value"></i></a></li>
+                        </div>
+                        <div class="mx-4 rounded-circle">
+                            <li><a href=""><i class="@servis.GetDatas().Result.FirstOrDefault(s=>s.Key=="linkedin").Value"></i></a></li>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+
+        </section>
+        <section id="contact">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="title">
+                        <h2>Contact Us</h2>
+                        <p style="color:#a2a2a2">Sed Ut Perspiciatis Unde Omnis Iste Natus Error Sit Voluptatem
+                            Accusantium Doloremque</p>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="contactEnd">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>A108 Adam Street<br />
+                                New York, NY 535022</span>
+                        </div>
+                        <div class="contactEnd">
+                            <i class="fa-regular fa-envelope"></i>
+                            <span> info@example.com</span>
+                        </div>
+                        <div class="contactEnd">
+                            <i class="fa-solid fa-phone-volume"></i>
+                            <span>+1 5589 55488 55s</span>
+                        </div>
+                        <div class="icons d-flex justify-content-around w-50">
+                            <div class="rounded-circle"><i class="@servis.GetDatas().Result.FirstOrDefault(s=>s.Key=="twitter").Value"></i></div>
+                            <div class="rounded-circle"><i class="@servis.GetDatas().Result.FirstOrDefault(s=>s.Key=="facebook").Value"></i></div>
+                            <div class="rounded-circle"><i class="@servis.GetDatas().Result.FirstOrDefault(s=>s.Key=="instagram").Value"></i></div>
+                            <div class="rounded-circle"><i class="@servis.GetDatas().Result.FirstOrDefault(s=>s.Key=="linkedin").Value"></i></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <form action="">
+                            <div>
+                                <input class="form-control border border-info mt-2" type="text" placeholder="Your Name">
+                            </div>
+                            <div>
+                                <input class="form-control border border-info mt-2" type="email"
+                                    placeholder="Your Email">
+                            </div>
+                            <div>
+                                <input class="form-control border border-info mt-2" type="text" placeholder="Subject">
+                            </div>
+                            <div class="w-75">
+
+                                <textarea class="mt-2 w-100" name="s" id="" rows="7" placeholder="Message"></textarea>
+                            </div>
+                            <div class="text-center">
+                                <button class="btn ">Send Message</button>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
