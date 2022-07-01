@@ -1,0 +1,54 @@
+﻿@using eStartap.Models
+
+@model List<AppUser>
+@{
+    ViewData["Title"] = "Index";
+}
+
+
+
+<div class="table-responsive pt-3"> 
+    <a asp-controller="Users" asp-action="Create" style="color:white;font-size:20px" class="mb-3 mx-2 btn btn-success">Create User</a>
+
+
+<table class="table table-dark mt-5">
+    <thead>
+        <tr>
+            
+            <th scope="col">Name</th>
+            <th scope="col">Surname</th>
+            <th scope="col">Email</th>
+            <th scope="col">Blocked</th>
+            <th scope="col">Delete</th>
+        </tr>
+    </thead>
+    <tbody class="table-group-divider">
+
+        @foreach (AppUser app in Model)
+        {
+            <tr>
+                
+                <td>@app.Name</td>
+                <td>@app.Surname</td>
+                <td>@app.Email</td>
+               
+                <td> 
+                    <div>
+                         <a asp-controller="Users" asp-action="Edit" asp-route-id="@app.Id" class="btn btn-danger"><i class="fa-solid fa-user-pen"></i></a>
+                    </div>
+                </td>
+                <td>
+                    <div>
+                         <a asp-controller="Users" asp-action="Detail" asp-route-id="@app.Id" class="btn btn-danger">
+                                   <i class="fa-solid fa-circle-info"></i> </a>
+                    </div>
+                </td>
+            </tr>
+        }
+
+
+    </tbody>
+</table>
+</div>
+
+
